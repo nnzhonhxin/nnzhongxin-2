@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin-2/main/nm%20(1).lua"))()
 local window = library:new("nn中心1.0")
 local creds = window:Tab("信息",'18255612747')
 
@@ -15,6 +15,7 @@ local bin = creds:section("玩家信息",true)
     
     local bin = creds:section("公告(必看)",true)
     bin:Label("更新:河北唐县")
+    bin:Label("更新时间:6月29日")
     bin:Label("永久免费：免费")
     
 local credits = creds:section("关闭",true)
