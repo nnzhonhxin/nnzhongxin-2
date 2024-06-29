@@ -1,10 +1,5 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
 local window = library:new("nn中心1.1")
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
-local LBLG = Instance.new("ScreenGui", getParent)
-local LBL = Instance.new("TextLabel", getParent)
-local player = game.Players.LocalPlayer
-
 LBLG.Name = "LBLG"
 LBLG.Parent = game.CoreGui
 LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
