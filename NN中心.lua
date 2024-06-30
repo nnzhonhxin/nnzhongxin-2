@@ -1,3 +1,6 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
+local window = library:new("nn中心1.1")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -36,36 +39,6 @@ local function HeartbeatUpdate()
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
 	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
-
-OrionLib:MakeNotification({
-                    Name = "正在开启反挂机请稍等...",
-                    Content = "Akf 开启中...",
-                    Time = 4
-                })     
-print("索引开启反挂机")
-		local vu = game:GetService("VirtualUser")
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		   wait(1)
-		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		end)      
-                wait(4)
-OrionLib:MakeNotification({
-                    Name = "开启成功",
-                    Content = "AKF",
-                    Time = 3
-                })
-                OrionLib:MakeNotification({
-                    Name = "开心",
-                    Content = "开心对待每一天",
-                    Time = 3
-                })
-    wait(1)
-                
-Start = tick()
-Heartbeat:Connect(HeartbeatUpdate)
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
-local window = library:new("nn中心1.1")
 local creds = window:Tab("信息",'18255612747')
 
 local bin = creds:section("采用云端更新",true)
