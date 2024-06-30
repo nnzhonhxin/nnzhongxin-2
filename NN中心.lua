@@ -1,4 +1,4 @@
-local LBLG = Instance.new("ScreenGui", getParent)
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
 
@@ -37,7 +37,6 @@ local function HeartbeatUpdate()
 	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S")).."秒″
 end
 Start = tick()
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
 local window = library:new("nn中心1.1")
 local creds = window:Tab("信息",'18255612747')
 
