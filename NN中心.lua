@@ -1,5 +1,4 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
-local window = library:new("nn中心1.1")
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
@@ -17,7 +16,7 @@ LBL.BorderColor3 = Color3.new(0, 0, 0)
 LBL.Position = UDim2.new(0.75,0,0.010,0)
 LBL.Size = UDim2.new(0, 133, 0, 30)
 LBL.Font = Enum.Font.GothamSemibold
-LBL.Text = "半缝合"
+LBL.Text = "纯缝合"
 LBL.TextColor3 = Color3.new(155, 155, 155)
 LBL.TextScaled = true
 LBL.TextSize = 14
@@ -39,6 +38,7 @@ local function HeartbeatUpdate()
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
 	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
+local window = library:new("nn中心1.1")
 local creds = window:Tab("信息",'18255612747')
 
 local bin = creds:section("采用云端更新",true)
