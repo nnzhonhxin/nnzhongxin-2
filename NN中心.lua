@@ -1,5 +1,3 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
-local window = library:new("nn中心1.1")
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -66,6 +64,8 @@ OrionLib:MakeNotification({
                 
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
+local window = library:new("nn中心1.1")
 local creds = window:Tab("信息",'18255612747')
 
 local bin = creds:section("采用云端更新",true)
